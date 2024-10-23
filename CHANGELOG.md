@@ -1,3 +1,10 @@
+## 2.3.4
+
+### Changed
+
+-   Updated dependencies
+-   Typings update
+
 ## 2.3.3
 
 ### Fixed
