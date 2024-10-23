@@ -7,5 +7,5 @@ import type Interface from "../../Interface/CSS/lightningcss.js";
 export default {
 	minify: true,
 	sourceMap: false,
-	unusedSymbols: false,
+	unusedSymbols: [],
 } satisfies Interface as Interface;
