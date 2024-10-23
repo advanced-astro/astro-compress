@@ -5,9 +5,7 @@ import type File from "../../Type/Image/Filesharp.js";
  * @module Image
  *
  */
-export default (async (
-	...[Option, { Buffer, Input }]
-) => {
+export default (async (...[Option, { Buffer, Input }]) => {
 	const File = Input.split(".").pop();
 
 	if (!File) {
