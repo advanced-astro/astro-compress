@@ -1,3 +1,5 @@
+import type { Targets } from "lightningcss";
+
 import type Interface from "../../Interface/CSS/lightningcss.js";
 
 /**
@@ -8,7 +10,5 @@ export default {
 	minify: true,
 	sourceMap: false,
 	unusedSymbols: [],
-	targets: (await import("lightningcss")).browserslistToTargets(
-		(await import("browserslist")).default(">= 0.25%"),
-	),
+	targets: process.env["TARGETS"] as Targets,
 } satisfies Interface as Interface;
