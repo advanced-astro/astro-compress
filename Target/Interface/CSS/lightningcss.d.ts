@@ -14,8 +14,8 @@ export default interface Interface extends Omit<TransformOptions<CustomAtRules>,
     /**
      * Whether to remove unused selectors or keywords.
      *
-     * @default Compress false
+     * @default Compress []
      * @default lightningcss undefined
      */
-    unusedSymbols?: string[] | boolean;
+    unusedSymbols?: string[];
 }

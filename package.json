@@ -1,6 +1,6 @@
 {
 	"name": "@playform/compress",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"private": false,
 	"description": "🗜️ Compress —",
 	"keywords": [
@@ -45,6 +45,7 @@
 		"@types/csso": "5.0.4",
 		"@types/html-minifier-terser": "7.0.2",
 		"astro": "*",
+		"browserslist": "4.24.2",
 		"commander": "12.1.0",
 		"csso": "5.0.5",
 		"deepmerge-ts": "7.1.3",
