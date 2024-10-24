@@ -1,3 +1,20 @@
+## 2.3.5
+
+### Added
+
+-   New Configuration folder with ESBuild.js and ESBuild.ts files
+-   Added browserslist as a development dependency
+
+### Changed
+
+-   Updated .npmignore to exclude the Configuration/ directory
+-   Modified package.json scripts to use the new ESBuild configuration
+-   Updated version to 0.1.6
+-   Enhanced error handling in CSS compression in Source/Function/Integration.ts
+-   Updated Source/Interface/CSS/lightningcss.ts to set default value for
+    unusedSymbols
+-   Added targets to Source/Variable/CSS/lightningcss.ts
+
 ## 2.3.4
 
 ### Changed

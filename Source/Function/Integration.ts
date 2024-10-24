@@ -107,33 +107,45 @@ export default ((...[_Option = {}]) => {
 									case "CSS": {
 										let CSS = Buffer.toString();
 
-										// @ts-expect-error
-										if (Setting["lightningcss"]) {
-											CSS = (await import("lightningcss"))
-												.transform(
-													Merge(
-														{
-															code: (
-																await import(
-																	"buffer"
-																)
-															).Buffer.from(CSS),
-															filename: Input,
-														},
-														// @ts-expect-error
-														Setting["lightningcss"],
-													),
+										try {
+											// @ts-expect-error
+											if (Setting["lightningcss"]) {
+												CSS = (
+													await import("lightningcss")
 												)
-												.code.toString();
-										}
+													.transform(
+														Merge(
+															{
+																code: (
+																	await import(
+																		"buffer"
+																	)
+																).Buffer.from(
+																	CSS,
+																),
+																filename: Input,
+															},
+															// @ts-expect-error
+															Setting[
+																"lightningcss"
+															],
+														),
+													)
+													.code.toString();
+											}
 
-										// @ts-expect-error
-										if (Setting["csso"]) {
-											CSS = (await import("csso")).minify(
-												CSS,
-												// @ts-expect-error
-												Setting["csso"],
-											).css;
+											// @ts-expect-error
+											if (Setting["csso"]) {
+												CSS = (
+													await import("csso")
+												).minify(
+													CSS,
+													// @ts-expect-error
+													Setting["csso"],
+												).css;
+											}
+										} catch (_Error) {
+											console.log(_Error);
 										}
 
 										return CSS;
@@ -207,8 +219,8 @@ export default ((...[_Option = {}]) => {
 							Fulfilled: async ({ File, Info: { Total } }) =>
 								File > 0
 									? `${(await import("kleur/colors")).green(
-											`✓ Successfully compressed a total of ${File} ${Type} ${
-												File === 1 ? "file" : "files"
+											`✓ Successfully compressed a total of ${File} ${Type} file${
+												File !== 1 ? "s" : ""
 											} for ${(
 												await import(
 													"@playform/pipe/Target/Function/Bytes.js"

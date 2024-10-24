@@ -1,1 +1,1 @@
-const{default:e}=await import("../../Variable/Image/Mapsharp.js");export{e as _Map};
+const{default:p}=await import("../../Variable/Image/Mapsharp.js");export{p as _Map};
