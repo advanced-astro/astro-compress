@@ -30,8 +30,8 @@
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
 		"name": "🖋️ Source — 👐🏻 Open —",
-		"email": "Source/Open@PlayForm.Cloud",
-		"url": "HTTPS://PlayForm.Cloud"
+		"email": "Source/Open@PlayForm.LTD",
+		"url": "HTTPS://PlayForm.LTD"
 	},
 	"type": "module",
 	"main": "./Target/Function/Integration.js",
@@ -51,7 +51,7 @@
 		"fast-glob": "3.3.2",
 		"html-minifier-terser": "7.2.0",
 		"kleur": "4.1.5",
-		"lightningcss": "1.27.0",
+		"lightningcss": "1.28.1",
 		"sharp": "0.33.5",
 		"svgo": "3.3.2",
 		"terser": "5.36.0"
@@ -59,7 +59,7 @@
 	"devDependencies": {
 		"@playform/build": "0.1.8",
 		"browserslist": "4.24.2",
-		"lightningcss": "1.27.0"
+		"lightningcss": "1.28.1"
 	},
 	"publishConfig": {
 		"access": "public",
