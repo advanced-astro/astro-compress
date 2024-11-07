@@ -110,6 +110,7 @@ SVG compression is supported, as well via [`svgo`][svgo].
 
 ### Default Compression
 
+
 You can override any of the default options from the configurations of:
 
 -   [`csso`](https://github.com/css/csso#minifysource-options)
