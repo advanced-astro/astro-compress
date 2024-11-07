@@ -106,7 +106,7 @@ The following image file types will be compressed via [`sharp`][sharp]:
 -   tiff
 -   webp
 
-SVG compression is supported, as well via [`svgo`].
+SVG compression is supported, as well via [`svgo`][svgo].
 
 ### Default Compression
 
