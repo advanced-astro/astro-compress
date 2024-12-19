@@ -112,12 +112,12 @@ SVG compression is supported, as well via [`svgo`][svgo].
 
 You can override any of the default options from the configurations of:
 
--   [`csso`](https://github.com/css/csso#minifysource-options)
--   [`lightningcss`](https://github.com/parcel-bundler/lightningcss/blob/master/node/index.d.ts#L8)
--   [`html-minifier-terser`](https://github.com/terser/html-minifier-terser#options-quick-reference)
+-   [`csso`](HTTPS://GitHub.Com/css/csso#minifysource-options)
+-   [`lightningcss`](HTTPS://GitHub.Com/parcel-bundler/lightningcss/blob/master/node/index.d.ts#L8)
+-   [`html-minifier-terser`](HTTPS://GitHub.Com/terser/html-minifier-terser#options-quick-reference)
 -   [`sharp`](https://sharp.pixelplumbing.com/api-output#jpeg)
--   [`svgo`](https://github.com/svg/svgo#configuration)
--   [`terser`](https://github.com/terser/terser#minify-options-structure)
+-   [`svgo`](HTTPS://GitHub.Com/svg/svgo#configuration)
+-   [`terser`](HTTPS://GitHub.Com/terser/terser#minify-options-structure)
 
 **`astro.config.ts`**
 
@@ -158,7 +158,7 @@ export default {
 ```
 
 You can see the full option map here:
-[`Source/Interface/Option.ts`](https://github.com/PlayForm/Compress/blob/main/Source/Interface/Option.ts)
+[`Source/Interface/Option.ts`](HTTPS://GitHub.Com/PlayForm/Compress/blob/main/Source/Interface/Option.ts)
 
 ### Output
 
