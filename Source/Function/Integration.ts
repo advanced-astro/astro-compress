@@ -82,7 +82,7 @@ export default ((...[_Option = {}]) => {
 				}
 
 				if (typeof Cache === "object" && Cache.Search === Search) {
-					Cache.Search = Directory;
+					Cache.Search = Directory.toString();
 				}
 
 				for (const [Type, Setting] of Object.entries({
