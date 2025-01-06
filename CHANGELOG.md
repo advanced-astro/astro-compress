@@ -10,7 +10,7 @@
 
 - Updated `package.json` to include updated contact information and package
   dependencies.
-- Updated README to reflect the updated organization name in the URLs and
+- Updated `README.md` to reflect the updated organization name in the URLs and
   images.
 
 ### Fixed
