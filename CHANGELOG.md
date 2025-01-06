@@ -1,5 +1,23 @@
 ## 0.1.7
 
+### Added
+
+- Dependents stats for PlayForm/Compress badge to `README.md`.
+- `DEPENDENTS.md` file containing a list of repositories that depend on this
+  package.
+
+### Changed
+
+- Updated `package.json` to include updated contact information and package
+  dependencies.
+- Updated README to reflect the updated organization name in the URLs and
+  images.
+
+### Fixed
+
+- Corrected a bug in `Source/Function/Integration.ts` where `Cache.Search` was
+  not being set correctly.
+
 ## 0.1.6
 
 ### Added
