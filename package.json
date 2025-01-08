@@ -1,13 +1,13 @@
 {
-	"name": "astro-compress",
-	"version": "2.3.6",
+	"name": "@playform/compress",
+	"version": "0.1.7",
 	"private": false,
 	"description": "🗜️ Compress —",
 	"keywords": [
 		"astro",
 		"astro-component",
 		"astro-integration",
-		"astro-compress",
+		"@playform/compress",
 		"compress",
 		"minify",
 		"css",
