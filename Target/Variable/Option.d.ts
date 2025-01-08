@@ -3,6 +3,23 @@
  *
  */
 declare const _default: {
+    Path: string;
+    Cache: {
+        Search: string;
+        Folder: string;
+    };
+    Logger: 2;
+    Action: {
+        Failed: ({ Input }: import("@playform/pipe/Target/Interface/File.js").default) => Promise<string>;
+        Passed: ({ Before, Buffer }: import("@playform/pipe/Target/Interface/File.js").default) => Promise<boolean>;
+        Accomplished: ({ Input, Before, After }: import("@playform/pipe/Target/Interface/File.js").default) => Promise<string>;
+        Changed: (Plan: import("@playform/pipe/Target/Interface/Plan.js").default) => Promise<any>;
+        Read: ({ Input }: import("@playform/pipe/Target/Interface/File.js").default) => Promise<string>;
+        Wrote: ({ Buffer }: import("@playform/pipe/Target/Interface/File.js").default) => Promise<import("@playform/pipe/Target/Type/Buffer.js").Type>;
+        Fulfilled: ({ File }: import("@playform/pipe/Target/Interface/Plan.js").default) => Promise<string | false>;
+    };
+    File: string;
+    Exclude: false;
     CSS: {
         csso: import("../Interface/CSS/csso.js").default;
         lightningcss: import("../Interface/CSS/lightningcss.js").default;
@@ -37,6 +54,9 @@ declare const _default: {
             useShortDoctype: false;
         };
     };
+    Image: {
+        sharp: import("../Interface/Image/sharp.js").default;
+    };
     JavaScript: {
         terser: {
             ecma: 5;
@@ -52,9 +72,6 @@ declare const _default: {
             };
         };
     };
-    Image: {
-        sharp: import("../Interface/Image/sharp.js").default;
-    };
     SVG: {
         svgo: {
             multipass: true;
@@ -67,20 +84,5 @@ declare const _default: {
     };
     Map: import("../Interface/Map.js").default;
     Parser: import("../Interface/Parser.js").default;
-    Action: {
-        Failed: ({ Input }: {
-            Input: any;
-        }) => Promise<string>;
-        Passed: ({ Before, Buffer }: {
-            Before: any;
-            Buffer: any;
-        }) => Promise<boolean>;
-        Accomplished: ({ Input, Before, After }: {
-            Input: any;
-            Before: any;
-            After: any;
-        }) => Promise<string>;
-        Changed: (Plan: any) => Promise<any>;
-    };
 };
 export default _default;
