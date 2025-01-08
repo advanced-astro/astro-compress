@@ -1,5 +1,30 @@
 ## 2.3.6
 
+### Added
+
+- Added `DEPENDENTS.md` to `.npmignore`.
+
+### Changed
+
+- Updated package version from `2.3.5` to `2.3.6`.
+- Updated contact email in `package.json` from `Source/Open@PlayForm.Cloud` to
+  `Source/Open@PlayForm.LTD`.
+- Updated URL in `package.json` from `HTTPS://PlayForm.Cloud` to
+  `HTTPS://PlayForm.LTD`.
+- Updated dependencies in `package.json`:
+    - `@playform/pipe` from `0.1.1` to `0.1.2`.
+    - `commander` from `12.1.0` to `13.0.0`.
+    - `fast-glob` from `3.3.2` to `3.3.3`.
+    - `lightningcss` from `1.27.0` to `1.28.2`.
+    - `terser` from `5.36.0` to `5.37.0`.
+    - `@playform/build` from `0.1.8` to `0.2.1`.
+    - `browserslist` from `4.24.2` to `4.24.4`.
+
+### Fixed
+
+- Modified `Cache.Search` assignment in `Integration.ts` to ensure `Directory`
+  is converted to a string using `Directory.toString()`.
+
 ## 2.3.5
 
 ### Added
