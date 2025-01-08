@@ -284,8 +284,8 @@ This version marks the beginning of the recorded changes.
 
 ### Changed
 
-- Moved `csso`, `html-minifier-terser`, `lightningcss`, `sharp`, `svgo`, and `terser` to
-  dependencies
+- Moved `csso`, `html-minifier-terser`, `lightningcss`, `sharp`, `svgo`, and
+  `terser` to dependencies
 
 ## 0.0.2
 
@@ -303,5 +303,3 @@ This version marks the beginning of the recorded changes.
 - Added configuration options for different file types
 - Set up basic project structure with separate files for different
   functionalities
-
-
