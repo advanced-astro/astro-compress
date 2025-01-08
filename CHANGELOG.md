@@ -1,24 +1,4 @@
-## 0.1.7
-
-### Added
-
-- Dependents stats for PlayForm/Compress badge to `README.md`.
-- `DEPENDENTS.md` file containing a list of repositories that depend on this
-  package.
-
-### Changed
-
-- Updated `package.json` to include updated contact information and package
-  dependencies.
-- Updated `README.md` to reflect the updated organization name in the URLs and
-  images.
-
-### Fixed
-
-- Corrected a bug in `Source/Function/Integration.ts` where `Cache.Search` was
-  not being set correctly.
-
-## 0.1.6
+## 2.3.5
 
 ### Added
 
@@ -35,20 +15,20 @@
   unusedSymbols
 - Added targets to Source/Variable/CSS/lightningcss.ts
 
-## 0.1.5
+## 2.3.4
 
 ### Changed
 
 - Updated dependencies
 - Typings update
 
-## 0.1.4
+## 2.3.3
 
 ### Fixed
 
 - Fixes missing `Pipe.js`
 
-## 0.1.2
+## 2.3.2
 
 ### Added
 
@@ -93,7 +73,7 @@
 - Fixed alignment and spacing issues in README table
 - Fixed incorrect package name in dependency badges
 
-## 0.1.1
+## 2.3.1
 
 ### Changed
 
@@ -106,7 +86,61 @@
 - Improved code formatting in Source/Function/Image/Writesharp.ts:
     - Simplified import statement for default sharp options
 
-## 0.1.0
+## 2.3.0
+
+### Changed
+
+- Updated TODO comments in Integration.ts and Middleware.ts
+
+## 2.2.28
+
+### Changed
+
+- Updated lightningcss interface and options
+
+## 2.2.27
+
+### Changed
+
+- Reordered CSS processing in Integration.ts (lightningcss now runs before csso)
+
+## 2.2.26
+
+### Changed
+
+- Minor formatting changes and comma additions
+
+## 2.2.25
+
+No changes recorded in this version.
+
+## 2.2.24
+
+### Changed
+
+- Updated sharp configuration in Integration.ts
+- Removed Merge.ts interface
+
+## 2.2.23
+
+### Changed
+
+- Updated CSS processing in Integration.ts to support both csso and lightningcss
+- Minor updates to sharp configuration and error handling
+
+## 2.2.22
+
+### Changed
+
+- Updated import paths to use @ prefix
+- Renamed some Type interfaces to Interface
+- Updated sharp configuration and processing
+- Added support for lightningcss
+- Updated various option configurations
+
+## 2.2.21
+
+This version marks the beginning of the recorded changes.
 
 ### Added
 
@@ -263,4 +297,9 @@
 
 ### Added
 
-- Initial release
+- Initial setup of AstroCompress integration
+- Implemented various compression functions for CSS, HTML, JavaScript, Images,
+  and SVG
+- Added configuration options for different file types
+- Set up basic project structure with separate files for different
+  functionalities
