@@ -1,21 +1,21 @@
 <table><tr> <td colspan="1"> <h3 align="center"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://PlayForm.LTD/Dark/Image/GitHub/Astro.svg"> <source media="(prefers-color-scheme: light)" srcset="https://PlayForm.LTD/Image/GitHub/Astro.svg"> <img width="28" alt="Astro" src="https://PlayForm.LTD/Image/GitHub/Astro.svg"> </picture>  </h3> </td> <td colspan="3" valign="top"> <h3 align="center"> Related — </h3> </td> </tr><tr><td valign="top" colspan="1"><a href="HTTPS://GitHub.Com/PlayForm/Inline/actions/workflows/Node.yml" target="_blank"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/actions/workflow/status/PlayForm/Inline/Node.yml?branch=main&label=Build&logo=node.js&color=black&labelColor=black&logoColor=white&logoWidth=0"> <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/actions/workflow/status/PlayForm/Inline/Node.yml?branch=main&label=Build&logo=node.js&color=white&labelColor=white&logoColor=black&logoWidth=0"> <img src="https://img.shields.io/github/actions/workflow/status/PlayForm/Inline/Node.yml?branch=main&label=Build&logo=node.js&color=black&labelColor=black&logoColor=white&logoWidth=0" alt="Build" title="Build"> </picture> </a><br><a href="HTTPS://NPMJS.Org/@playform/inline?activeTab=dependencies" target="_blank"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/librariesio/release/npm/@playform/inline?logo=dependabot&label=&color=black&labelColor=black&logoColor=white&logoWidth=0"> <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/librariesio/release/npm/@playform/inline?logo=dependabot&label=&color=white&labelColor=white&logoColor=black&logoWidth=0"> <img src="https://img.shields.io/librariesio/release/npm/@playform/inline?logo=dependabot&label=&color=black&labelColor=black&logoColor=white&logoWidth=0" alt="Dependency" title="Dependency"> </picture> </a><br><a href="HTTPS://NPMJS.Org/@playform/inline" target="_blank"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/v/@playform/inline?label=Version&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0"> <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/v/@playform/inline?label=Version&logo=npm&color=white&labelColor=white&logoColor=black&logoWidth=0"> <img src="https://img.shields.io/npm/v/@playform/inline?label=Version&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0" alt="Version" title="Version"> </picture> </a><br></td><td valign="top" colspan="1"><a href="HTTPS://GitHub.Com/PlayForm/Inline" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/stars/PlayForm/Inline?style=flat&label=Star&logo=github&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/stars/PlayForm/Inline?style=flat&label=Star&logo=github&color=white&labelColor=white&logoColor=black&logoWidth=0"><img src="https://img.shields.io/github/stars/PlayForm/Inline?style=flat&label=Star&logo=github&color=black&labelColor=black&logoColor=white&logoWidth=0" alt="Star"></picture></a><br><a href="HTTPS://NPMJS.Org/@playform/inline" target="_blank"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/dt/@playform/inline?label=Download&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0"> <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/dt/@playform/inline?label=Download&logo=npm&color=white&labelColor=white&logoColor=black&logoWidth=0"> <img src="https://img.shields.io/npm/dt/@playform/inline?label=Download&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0" alt="Download" title="Download"> </picture> </a><br><a href="HTTPS://GitHub.Com/PlayForm/Inline" target="_blank"><b>Inline 🦔</b></a></td><td valign="top" colspan="1"><a href="HTTPS://GitHub.Com/PlayForm/Format/actions/workflows/Node.yml" target="_blank"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/actions/workflow/status/PlayForm/Format/Node.yml?branch=main&label=Build&logo=node.js&color=black&labelColor=black&logoColor=white&logoWidth=0"> <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/actions/workflow/status/PlayForm/Format/Node.yml?branch=main&label=Build&logo=node.js&color=white&labelColor=white&logoColor=black&logoWidth=0"> <img src="https://img.shields.io/github/actions/workflow/status/PlayForm/Format/Node.yml?branch=main&label=Build&logo=node.js&color=black&labelColor=black&logoColor=white&logoWidth=0" alt="Build" title="Build"> </picture> </a><br><a href="HTTPS://NPMJS.Org/@playform/format?activeTab=dependencies" target="_blank"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/librariesio/release/npm/@playform/format?logo=dependabot&label=&color=black&labelColor=black&logoColor=white&logoWidth=0"> <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/librariesio/release/npm/@playform/format?logo=dependabot&label=&color=white&labelColor=white&logoColor=black&logoWidth=0"> <img src="https://img.shields.io/librariesio/release/npm/@playform/format?logo=dependabot&label=&color=black&labelColor=black&logoColor=white&logoWidth=0" alt="Dependency" title="Dependency"> </picture> </a><br><a href="HTTPS://NPMJS.Org/@playform/format" target="_blank"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/v/@playform/format?label=Version&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0"> <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/v/@playform/format?label=Version&logo=npm&color=white&labelColor=white&logoColor=black&logoWidth=0"> <img src="https://img.shields.io/npm/v/@playform/format?label=Version&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0" alt="Version" title="Version"> </picture> </a><br></td><td valign="top" colspan="1"><a href="HTTPS://GitHub.Com/PlayForm/Format" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/stars/PlayForm/Format?style=flat&label=Star&logo=github&color=black&labelColor=black&logoColor=white&logoWidth=0"><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/stars/PlayForm/Format?style=flat&label=Star&logo=github&color=white&labelColor=white&logoColor=black&logoWidth=0"><img src="https://img.shields.io/github/stars/PlayForm/Format?style=flat&label=Star&logo=github&color=black&labelColor=black&logoColor=white&logoWidth=0" alt="Star"></picture></a><br><a href="HTTPS://NPMJS.Org/@playform/format" target="_blank"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/npm/dt/@playform/format?label=Download&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0"> <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/npm/dt/@playform/format?label=Download&logo=npm&color=white&labelColor=white&logoColor=black&logoWidth=0"> <img src="https://img.shields.io/npm/dt/@playform/format?label=Download&logo=npm&color=black&labelColor=black&logoColor=white&logoWidth=0" alt="Download" title="Download"> </picture> </a><br><a href="HTTPS://GitHub.Com/PlayForm/Format" target="_blank"><b>Format 🗻</b></a></td></tr></table>
 
-# 🗜️ [Compress] —
+# [Compress] 🗜️
 
-This **[`Astro integration`][astro-integration]** brings compression utilities to
-your Astro project.
+This **[`Astro integration`][astro-integration]** brings compression utilities
+to your Astro project.
 
-🎁 [`CSS (csso)`][csso] —
+[`CSS (csso)`][csso] 🎁
 
-🎁 [`CSS (lightningcss)`][lightningcss] —
+[`CSS (lightningcss)`][lightningcss] 🎁
 
-🎁 [`HTML (html-minifier-terser)`][html-minifier-terser] —
+[`HTML (html-minifier-terser)`][html-minifier-terser] 🎁
 
-🎁 [`Image (sharp)`][sharp] —
+[`Image (sharp)`][sharp] 🎁
 
-🎁 [`JavaScript (terser)`][terser] —
+[`JavaScript (terser)`][terser] 🎁
 
-🎁 [`SVG (svgo)`][svgo] —
+[`SVG (svgo)`][svgo] 🎁
 
 > **Note**
 >
@@ -26,7 +26,7 @@ your Astro project.
 >
 > Use `Compress` last in your integration list for the best optimizations.
 
-## 🚀 Installation
+## Installation 🚀
 
 There are two ways to add integrations to your project. Let's try the most
 convenient option first!
@@ -86,25 +86,25 @@ and image files in the Astro `outDir` folder.
 
 The following image file types will be compressed via [`sharp`][sharp]:
 
--   avci
--   avcs
--   avif
--   avifs
--   gif
--   heic
--   heics
--   heif
--   heifs
--   jfif
--   jif
--   jpe
--   jpeg
--   jpg
--   apng
--   png
--   raw
--   tiff
--   webp
+- avci
+- avcs
+- avif
+- avifs
+- gif
+- heic
+- heics
+- heif
+- heifs
+- jfif
+- jif
+- jpe
+- jpeg
+- jpg
+- apng
+- png
+- raw
+- tiff
+- webp
 
 SVG compression is supported, as well via [`svgo`][svgo].
 
@@ -112,12 +112,12 @@ SVG compression is supported, as well via [`svgo`][svgo].
 
 You can override any of the default options from the configurations of:
 
--   [`csso`](HTTPS://GitHub.Com/css/csso#minifysource-options)
--   [`lightningcss`](HTTPS://GitHub.Com/parcel-bundler/lightningcss/blob/master/node/index.d.ts#L8)
--   [`html-minifier-terser`](HTTPS://GitHub.Com/terser/html-minifier-terser#options-quick-reference)
--   [`sharp`](https://sharp.pixelplumbing.com/api-output#jpeg)
--   [`svgo`](HTTPS://GitHub.Com/svg/svgo#configuration)
--   [`terser`](HTTPS://GitHub.Com/terser/terser#minify-options-structure)
+- [`csso`](HTTPS://GitHub.Com/css/csso#minifysource-options)
+- [`lightningcss`](HTTPS://GitHub.Com/parcel-bundler/lightningcss/blob/master/node/index.d.ts#L8)
+- [`html-minifier-terser`](HTTPS://GitHub.Com/terser/html-minifier-terser#options-quick-reference)
+- [`sharp`](https://sharp.pixelplumbing.com/api-output#jpeg)
+- [`svgo`](HTTPS://GitHub.Com/svg/svgo#configuration)
+- [`terser`](HTTPS://GitHub.Com/terser/terser#minify-options-structure)
 
 **`astro.config.ts`**
 
