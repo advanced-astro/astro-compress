@@ -1,4 +1,4 @@
-import type { BuildOptions } from "esbuild";
+import type { BuildOptions, Plugin } from "esbuild";
 
 /**
  * @module ESBuild
@@ -33,7 +33,7 @@ export default {
 					}
 				});
 			},
-		},
+		} as Plugin,
 	],
 	define: {
 		"process.env.VERSION_PACKAGE": `'${
