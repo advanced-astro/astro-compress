@@ -32,7 +32,7 @@ export default (await import("@Function/Merge.js")).default(
 			Failed: async ({ Input }) =>
 				`${red("Error:")} Cannot compress file ${gray(
 					await Directory(Input),
-				)}${red((await import("path")).parse(Input).base)}`,
+				)}${red((await import("node:path")).parse(Input).base)}`,
 			Passed: async ({ Before, Buffer }) =>
 				Before > _Buffer.byteLength(Buffer.toString()),
 			Accomplished: async ({ Input, Before, After }) => {
@@ -42,7 +42,7 @@ export default (await import("@Function/Merge.js")).default(
 					`(-${(await import("@playform/pipe/Target/Function/Bytes.js")).default(Save)})`,
 				)}	${(await import("kleur/colors")).green(
 					`${((Save / Before) * 100).toFixed(2)}%`,
-				)} reduction in ${gray(await Directory(Input))}${(await import("kleur/colors")).cyan((await import("path")).parse(Input).base)}`;
+				)} reduction in ${gray(await Directory(Input))}${(await import("kleur/colors")).cyan((await import("node:path")).parse(Input).base)}`;
 			},
 			Changed: async (Plan) =>
 				Object.defineProperty(Plan.Info, "Total", {

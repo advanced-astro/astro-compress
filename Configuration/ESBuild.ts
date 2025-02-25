@@ -23,7 +23,7 @@ export default {
 					try {
 						outdir
 							? await (
-									await import("fs/promises")
+									await import("node:fs/promises")
 								).rm(outdir, {
 									recursive: true,
 								})

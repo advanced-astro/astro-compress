@@ -5,8 +5,8 @@ import type Interface from "../Interface/Directory.js";
  *
  */
 export default (async (...[Path]) => {
-	let Directory = (await import("path"))
-		.normalize((await import("path")).parse(Path).dir)
+	let Directory = (await import("node:path"))
+		.normalize((await import("node:path")).parse(Path).dir)
 		.replace(/\\/g, "/")
 		.replace((await import("@Function/Integration.js")).System, "");
 
