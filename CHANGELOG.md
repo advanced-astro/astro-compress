@@ -13,7 +13,7 @@
 - Updated `README.md` to reflect the updated organization name in the URLs and
   images.
 
-### Fixed
+### Fix
 
 - Corrected a bug in `Source/Function/Integration.ts` where `Cache.Search` was
   not being set correctly.
@@ -44,7 +44,7 @@
 
 ## 0.1.4
 
-### Fixed
+### Fix
 
 - Fixes missing `Pipe.js`
 
@@ -85,7 +85,7 @@
 - Removed `Documentation/` directory (replaced with `docs/`)
 - Removed `Summary.md` file
 
-### Fixed
+### Fix
 
 - Various code improvements and refactoring for better type safety and
   performance
@@ -101,7 +101,7 @@
     - Reordered ignored directories and files
     - Added 'Summary.md' to ignored files
 
-### Fixed
+### Fix
 
 - Improved code formatting in Source/Function/Image/Writesharp.ts:
     - Simplified import statement for default sharp options
