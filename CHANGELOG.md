@@ -1,458 +1,266 @@
-## 2.2.8
+## 0.1.7
 
--   Cleanup
+### Add
 
-## 2.2.7
+- Dependents stats for PlayForm/Compress badge to `README.md`.
+- `DEPENDENTS.md` file containing a list of repositories that depend on this
+  package.
 
--   Cleanup
+### Change
 
-## 2.2.6
+- Updated `package.json` to include updated contact information and package
+  dependencies.
+- Updated `README.md` to reflect the updated organization name in the URLs and
+  images.
 
--   Cleanup
+### Fix
 
-## 2.2.5
+- Corrected a bug in `Source/Function/Integration.ts` where `Cache.Search` was
+  not being set correctly.
 
--   Bug fix
+## 0.1.6
 
-## 2.2.4
+### Add
 
--   Cleanup
--   Colorizes output
+- New Configuration folder with ESBuild.js and ESBuild.ts files
+- Added browserslist as a development dependency
 
-## 2.2.3
+### Change
 
--   Cleanup
+- Updated .npmignore to exclude the Configuration/ directory
+- Modified package.json scripts to use the new ESBuild configuration
+- Updated version to 0.1.6
+- Enhanced error handling in CSS compression in Source/Function/Integration.ts
+- Updated Source/Interface/CSS/lightningcss.ts to set default value for
+  unusedSymbols
+- Added targets to Source/Variable/CSS/lightningcss.ts
 
-## 2.2.2
+## 0.1.5
 
--   Cleanup
+### Change
 
-## 2.2.1
+- Updated dependencies
+- Typings update
 
--   Bug fix
+## 0.1.4
 
-## 2.2.0
+### Fix
 
--   Bug fix
--   Refactor allowing multiple parsers
+- Fixes missing `Pipe.js`
 
-## 2.1.6
+## 0.1.2
 
--   Cleanup
+### Add
 
-## 2.1.5
+- New CLI functionality with `Compress` command
+- New `CLI.ts` and `Pipe.ts` functions for improved command-line operations
+- Added `commander` dependency for CLI support
+- Added `fast-glob` dependency for file pattern matching
 
--   Cleanup
+### Change
 
-## 2.1.4
+- Updated package name from `astro-compress` to `@playform/compress`
+- Updated various dependencies to their latest versions:
+    - `@playform/pipe` from 0.1.0 to 0.1.1
+    - `deepmerge-ts` from 7.1.0 to 7.1.1
+    - `lightningcss` from 1.25.1 to 1.27.0
+    - `sharp` from 0.33.4 to 0.33.5
+    - `svgo` from 4.0.0-rc.0 to 3.3.2
+    - `terser` from 5.31.3 to 5.34.1
+    - `@playform/build` from 0.1.3 to 0.1.7
+- Refactored and improved various TypeScript interfaces and types
+- Updated README with new installation instructions and badge styling
+- Updated README badges to use HTTPS URLs
+- Updated README table layout for better visual presentation
+- Updated dependency badges in README to use correct package name
+  (`@playform/compress` instead of `@playform/inline`)
+- Updated README to remove unnecessary line breaks and improve spacing
+- Updated `Source/Function/Image/Writesharp.ts` to simplify an import statement
+- Added `Source/Function/CLI.ts` for command-line interface functionality
+- Added `Source/Interface/CLI.ts` to define the command-line interface
+- Updated `package.json` to include necessary CLI dependencies
 
--   Bug fix
+### Removed
 
-## 2.1.3
+- Removed `Documentation/` directory (replaced with `docs/`)
+- Removed `Summary.md` file
 
--   Bug fix
+### Fix
 
-## 2.1.2
+- Various code improvements and refactoring for better type safety and
+  performance
+- Fixed broken links in README badges
+- Fixed alignment and spacing issues in README table
+- Fixed incorrect package name in dependency badges
 
--   Bug fix
+## 0.1.1
 
-## 2.1.1
+### Change
 
--   Cleanup
-
-## 2.1.0
-
--   Refactor
--   Documentation
-
-## 2.0.15
-
--   Cleanup
-
-## 2.0.14
-
--   Cleanup
-
-## 2.0.13
-
--   Cleanup
-
-## 2.0.12
-
--   Cleanup
-
-## 2.0.11
-
--   Cleanup
-
-## 2.0.10
-
--   Cleanup
-
-## 2.0.9
-
--   Cleanup
-
-## 2.0.8
-
--   Cleanup
-
-## 2.0.7
-
--   Cleanup
-
-## 2.0.6
-
--   Cleanup
-
-## 2.0.5
-
--   Cleanup
-
-## 2.0.4
-
--   Cleanup
-
-## 2.0.2
-
--   Cleanup
-
-## 2.0.1
-
--   Restoration
-
-## 1.1.50
-
--   Cleanup
-
-## 1.1.49
-
--   Bug fix
-
-## 1.1.48
-
--   Cleanup
-
-## 1.1.47
-
--   Bug fix
-
-## 1.1.46
-
--   Cleanup
-
-## 1.1.45
-
--   Cleanup
-
-## 1.1.44
-
--   Cleanup
-
-## 1.1.43
-
--   Bug fix
-
-## 1.1.42
-
--   Bug fix
-
-## 1.1.41
-
--   Bug fix
-
-## 1.1.40
-
--   Version with provenance
-
-## 1.1.39
-
--   Bug fix
-
-## 1.1.38
-
--   Cleanup
-
-## 1.1.37
-
--   Version with provenance
-
-## 1.1.36
-
--   Cleanup
-
-## 1.1.35
-
--   Switches to the files-pipe component
-
-## 1.1.34
-
--   Updates files-pipeline component
-
-## 1.1.33
-
--   Process scripts enhancement
-
-## 1.1.32
-
--   Revert bug fix
-
-## 1.1.31
-
--   Bug fix
-
-## 1.1.30
-
--   Enhancement
-
-## 1.1.29
-
--   Cleanup
-
-## 1.1.28
-
--   Cleanup
--   Removes JSON compression
-
-## 1.1.27
-
--   Bug fix
--   Adds APNG compression
-
-## 1.1.26
-
--   Bug fix
-
-## 1.1.25
-
--   Compress JSON
-
-## 1.1.24
-
--   Cleanup
-
-## 1.1.23
-
--   Switches ownership
-
-## 1.1.22
-
--   Cleanup
-
-## 1.1.21
-
--   Bug fix
-
-## 1.1.20
-
--   Cleanup
-
-## 1.1.19
-
--   Bug fix
-
-## 1.1.18
-
--   Updates pipeline
-
-## 1.1.17
-
--   Bug fix
-
-## 1.1.16
-
--   Refactor
-
-## 1.1.15
-
--   Adds missing types
-
-## 1.1.14
-
--   Adapt
-
-## 1.1.13
-
--   Bug fix
-
-## 1.1.12
-
--   Cleanup
-
-## 1.1.11
-
--   Bug fix
-
-## 1.1.10
-
--   Cleanup
-
-## 1.1.9
-
--   Bug fix
-
-## 1.1.8
-
--   Cleanup
-
-## 1.1.7
-
--   Cleanup
-
-## 1.1.6
-
--   Cleanup
-
-## 1.1.5
-
--   Adds multiple paths
-
-## 1.1.4
-
--   Bug fix
-
-## 1.1.3
-
--   Bug fix
-
-## 1.1.2
-
--   Cleanup
-
-## 1.1.1
-
--   Cleanup
-
-## 1.1.0
-
--   Introduces filters
-
-## 1.0.12
-
--   Bug fix
-
-## 1.0.11
-
--   Bug fix
-
-## 1.0.10
-
--   Cleanup
-
-## 1.0.9
-
--   Switches ownership
-
-## 1.0.8
-
--   Cleanup
-
-## 1.0.7
-
--   Enhancement
-
-## 1.0.6
-
--   Cleanup
-
-## 1.0.5
-
--   Updates terser
-
-## 1.0.4
-
--   Refactor
-
-## 1.0.3
-
--   Bug fix
-
-## 1.0.2
-
--   Bug fix
-
-## 1.0.1
-
--   Bug fix
-
-## 1.0.0
-
--   First stable version
-
-## 0.0.19
-
--   Cleanup
-
-## 0.0.18
-
--   Bug fix
-
-## 0.0.17
-
--   Refactor
-
-## 0.0.16
-
--   Bug fix
-
-## 0.0.15
-
--   Cleanup
-
-## 0.0.14
-
--   Refactor
+- Updated .npmignore file:
+    - Reordered ignored directories and files
+    - Added 'Summary.md' to ignored files
+
+### Fix
+
+- Improved code formatting in Source/Function/Image/Writesharp.ts:
+    - Simplified import statement for default sharp options
+
+## 0.1.0
+
+### Add
+
+- Significant project restructuring with separate directories for Source,
+  Interface, Type, and Variable
+- New modules and interfaces for CSS, HTML, Image, JavaScript, and SVG file
+  types
+- Utility functions: Directory and Merge
+- Expanded support for additional image formats and optimization options
+- Enhanced error handling and logging
+- New "Run" script for building and watching 'Source/\*_/_.ts' files
+- Added svgo v4.0.0-rc.0 dependency
+- Added terser v5.31.3 dependency
+
+### Change
+
+- Major refactoring of the integration functionality in
+  Source/Function/Integration.ts
+- Moved configuration options to separate files in the Variable directory
+- Updated and expanded type definitions throughout the project
+- Modularized and improved compression logic for different file types
+- Overall code structure is now more modular and type-safe
+
+### Dependency Updates
+
+- Added svgo v4.0.0-rc.0
+- Changed astro dependency to use any version (\*)
+- Updated @playform/build to v0.1.2
+- Updated @playform/pipe to v0.1.0
+- Updated lightningcss to v1.25.1
+- Updated sharp to v0.33.4
+- Updated terser to v5.31.3
+
+### Removed
+
+- Removed specific version for astro dependency
 
 ## 0.0.13
 
--   Cleanup
+### Removed
+
+- Removed @playform/document from peerDependencies and peerDependenciesMeta
 
 ## 0.0.12
 
--   Refactor
+### Change
 
-## 0.0.11
-
--   Bug fix
+- Updated astro to use any version (\*)
 
 ## 0.0.10
 
--   Bug fix
+### Add
+
+- Added "@playform/compress" and "playform" to keywords
+- Added astro v4.9.2 as a dependency
+
+### Change
+
+- Updated description to "🗜️ Compress —"
+- Updated homepage, bugs, and repository URLs
+- Updated author information
+- Updated @playform/pipe to v0.0.5
+- Updated lightningcss to v1.25.1
+- Updated sharp to v0.33.4
+- Updated svgo to v3.3.2
+- Updated terser to v5.31.0
 
 ## 0.0.9
 
--   Refactor
--   Introduces svgo svg processing
+### Add
+
+- Added astro v4.9.2 as a dependency
+
+### Change
+
+- Moved @playform/build to devDependencies
+
+### Removed
+
+- Removed peerDependencies and peerDependenciesMeta
 
 ## 0.0.8
 
--   Updates README.md
+### Change
+
+- Updated lightningcss to v1.25.1
 
 ## 0.0.7
 
--   Introduces sharp image processing
+### Removed
+
+- Removed @playform/document from peerDependencies and peerDependenciesMeta
 
 ## 0.0.6
 
--   Bug fix
+### Change
+
+- Reordered peerDependencies and peerDependenciesMeta
 
 ## 0.0.5
 
--   Bug fix
+### Add
+
+- Added "Document" script for documenting 'Source/\*_/_.ts' files
+- Added @playform/document v0.0.7 as a peerDependency
+
+### Change
+
+- Updated @playform/pipe to v0.0.5
+- Updated lightningcss to v1.25.0
+- Updated sharp to v0.33.4
+- Updated svgo to v3.3.2
+- Updated terser to v5.31.0
+- Updated @playform/build to v0.0.9
+- Updated astro peerDependency to v4.9.1
 
 ## 0.0.4
 
--   Bug fix
+### Add
+
+- Added "@playform/compress" to keywords
+- Added astro v4.8.1 as a dependency
+
+### Change
+
+- Updated description to "🗜️ Compress —"
+- Updated homepage, bugs, and repository URLs to use HTTPS
+- Updated author information
+- Updated @playform/pipe to v0.0.3
+- Moved @playform/build to devDependencies
+
+### Removed
+
+- Removed "Document" script
 
 ## 0.0.3
 
--   Updates README.md
--   Refactor
+### Add
+
+- Added @playform/build, @playform/document, and astro as dependencies
+
+### Change
+
+- Moved csso, html-minifier-terser, lightningcss, sharp, svgo, and terser to
+  dependencies
 
 ## 0.0.2
 
--   Refactor
+### Change
+
+- Reverted various changes from previous versions
 
 ## 0.0.1
 
--   Initial version
+### Add
+
+- Initial release

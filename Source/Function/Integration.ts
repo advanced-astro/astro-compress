@@ -1,12 +1,17 @@
+import type Action from "@playform/pipe/Target/Interface/Action.js";
+import type Path from "@playform/pipe/Target/Type/Path.js";
+
+import type Onsharp from "../Interface/Image/Onsharp.js";
+import type Interface from "../Interface/Integration.js";
+
 /**
  * @module Integration
  *
  */
-
 // TODO: Test this for security
 export let System: string;
 
-export default ((...[_Option = {}]: Parameters<Type>) => {
+export default ((...[_Option = {}]) => {
 	Object.entries(_Option).forEach(([Key, Value]) =>
 		Object.defineProperty(_Option, Key, {
 			value:
@@ -37,6 +42,10 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 		if (Array.isArray(Path) || Path instanceof Set) {
 			Path.forEach((Path) => Paths.add(Path));
 		}
+
+		if (Path instanceof Map) {
+			Paths.add(Path);
+		}
 	}
 
 	if (typeof Parser === "object") {
@@ -48,14 +57,14 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 	}
 
 	return {
-		name: "astro-compress",
+		name: "@playform/compress",
 		hooks: {
 			"astro:config:done": async ({
 				config: {
 					outDir: { pathname },
 				},
 			}) => {
-				System = (await import("path"))
+				System = (await import("node:path"))
 					.parse(pathname)
 					.dir.replace(/\\/g, "/");
 
@@ -63,30 +72,20 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 					System = System.substring(1);
 				}
 			},
-			"astro:build:done": async ({ dir }) => {
-				console.log(
-					`\n${(await import("kleur/colors")).bgGreen(
-						(await import("kleur/colors")).black(
-							" AstroCompress processing ",
-						),
-					)}`,
-				);
-
+			"astro:build:done": async ({ dir: Directory }) => {
 				if (typeof _Map !== "object") {
 					return;
 				}
 
-				console.log(Paths);
-
-				if (!Paths.size) {
-					Paths.add(dir);
+				if (Paths.size === 0) {
+					Paths.add(Directory);
 				}
 
 				if (typeof Cache === "object" && Cache.Search === Search) {
-					Cache.Search = dir;
+					Cache.Search = Directory.toString();
 				}
 
-				for (const [File, Setting] of Object.entries({
+				for (const [Type, Setting] of Object.entries({
 					CSS,
 					HTML,
 					Image,
@@ -94,7 +93,7 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 					SVG,
 				})) {
 					if (
-						!(Setting && _Map[File]) ||
+						!(Setting && _Map[Type]) ||
 						typeof Setting !== "object"
 					) {
 						continue;
@@ -104,29 +103,52 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 						Action,
 						Merge(Action, {
 							Wrote: async ({ Buffer, Input }) => {
-								switch (File) {
+								switch (Type) {
 									case "CSS": {
-										// TODO: Implement lightningcss
-										// console.log(
-										// 	(await import("lightningcss"))
-										// 		.transform({
-										// 			code: (
-										// 				await import("buffer")
-										// 			).Buffer.from(
-										// 				Buffer.toString()
-										// 			),
-										// 			filename: Input,
-										// 			// minify: true,
-										// 			sourceMap: false,
-										// 		})
-										// 		.code.toString()
-										// );
+										let CSS = Buffer.toString();
 
-										return (await import("csso")).minify(
-											Buffer.toString(),
+										try {
 											// @ts-expect-error
-											Setting["csso"],
-										).css;
+											if (Setting["lightningcss"]) {
+												CSS = (
+													await import("lightningcss")
+												)
+													.transform(
+														Merge(
+															{
+																code: (
+																	await import(
+																		"buffer"
+																	)
+																).Buffer.from(
+																	CSS,
+																),
+																filename: Input,
+															},
+															// @ts-expect-error
+															Setting[
+																"lightningcss"
+															],
+														),
+													)
+													.code.toString();
+											}
+
+											// @ts-expect-error
+											if (Setting["csso"]) {
+												CSS = (
+													await import("csso")
+												).minify(
+													CSS,
+													// @ts-expect-error
+													Setting["csso"],
+												).css;
+											}
+										} catch (_Error) {
+											console.log(_Error);
+										}
+
+										return CSS;
 									}
 
 									case "HTML": {
@@ -154,28 +176,39 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 									}
 
 									case "Image": {
-										return await (
-											await import(
-												"../Function/Image/Writesharp.js"
-											)
-										)
-											// @ts-expect-error
-											.default(Setting["sharp"], {
-												Buffer,
-												Input,
-											} as Onsharp);
+										try {
+											if (
+												Buffer instanceof
+												(await import("sharp")).default
+											) {
+												return await (
+													await import(
+														"@Function/Image/Writesharp.js"
+													)
+												)
+													// @ts-expect-error
+													.default(Setting["sharp"], {
+														Buffer,
+														Input,
+													} as Onsharp);
+											} else {
+												return Buffer;
+											}
+										} catch (_Error) {
+											console.log(_Error);
+
+											return Buffer;
+										}
 									}
 
 									case "SVG": {
-										const { data: Data } = (
-											await import("svgo")
-										).optimize(
-											Buffer.toString(),
-											// @ts-expect-error
-											Setting["svgo"],
+										return (
+											(await import("svgo")).optimize(
+												Buffer.toString(),
+												// @ts-expect-error
+												Setting["svgo"],
+											).data ?? Buffer
 										);
-
-										return Data ?? Buffer;
 									}
 
 									default: {
@@ -183,41 +216,56 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 									}
 								}
 							},
-							Fulfilled: async (Plan) =>
-								Plan.Files > 0
+							Fulfilled: async ({ File, Info: { Total } }) =>
+								File > 0
 									? `${(await import("kleur/colors")).green(
-											`✓ Successfully compressed a total of ${
-												Plan.Files
-											} ${File} ${
-												Plan.Files === 1
-													? "file"
-													: "files"
-											} for ${await (
+											`✓ Successfully compressed a total of ${File} ${Type} file${
+												File !== 1 ? "s" : ""
+											} for ${(
 												await import(
-													"files-pipe/Target/Function/Bytes.js"
+													"@playform/pipe/Target/Function/Bytes.js"
 												)
-											).default(Plan.Info.Total)}.`,
-									  )}`
+											).default(Total)}.`,
+										)}`
 									: false,
 						} satisfies Action),
 					);
 
-					if (File === "Image") {
+					if (Type === "Image") {
 						_Action = Merge(_Action, {
-							Read: async ({ Input }) => {
-								const { format } =
-									await Defaultsharp(Input).metadata();
+							Read: async ({ Input, Buffer }) => {
+								try {
+									(await import("sharp")).default.cache(
+										false,
+									);
 
-								return Defaultsharp(Input, {
-									failOn: "none",
-									sequentialRead: true,
-									unlimited: true,
-									animated:
-										// biome-ignore lint/nursery/noUselessTernary:
-										format === "webp" || format === "gif"
-											? true
-											: false,
-								});
+									const { format } = await (
+										await import("sharp")
+									)
+										.default(Input)
+										.metadata();
+
+									const Default = {
+										animated: !!(
+											format === "webp" ||
+											format === "gif"
+										),
+									};
+
+									return (await import("sharp")).default(
+										Input,
+										typeof Image === "object" &&
+											typeof Image.sharp === "object" &&
+											typeof Image.sharp.sharp ===
+												"object"
+											? Merge(Default, Image.sharp?.sharp)
+											: Default,
+									);
+								} catch (_Error) {
+									console.log(_Error);
+
+									return Buffer;
+								}
 							},
 						} satisfies Action);
 					}
@@ -227,38 +275,30 @@ export default ((...[_Option = {}]: Parameters<Type>) => {
 							await (
 								await (
 									await new (
-										await import("files-pipe")
+										await import("@playform/pipe")
 									).default(Cache, Logger).In(Path)
-								).By(_Map[File] ?? "**/*")
+								).By(_Map[Type] ?? "**/*")
 							).Not(Exclude)
 						).Pipe(_Action);
 					}
 				}
 			},
-			// @TODO: Finish this
+			// TODO: Finish this
 			// "astro:config:setup": ({ addMiddleware }) => {
 			// 	addMiddleware();
 			// },
 		},
 	};
-}) satisfies Type as Type;
+}) satisfies Interface as Interface;
 
-import type Onsharp from "../Interface/Image/Onsharp.js";
-import type Type from "../Interface/Integration.js";
-
-import type Action from "files-pipe/Target/Interface/Action.js";
-import type Path from "files-pipe/Target/Type/Path.js";
-
-export const { default: Default } = await import("../Variable/Option.js");
+export const { default: Default } = await import("@Variable/Option.js");
 
 export const {
 	default: {
 		Cache: { Search },
 	},
-} = await import("files-pipe/Target/Variable/Option.js");
+} = await import("@playform/pipe/Target/Variable/Option.js");
 
-export const { default: Merge } = await import("../Function/Merge.js");
-
-export const { default: Defaultsharp } = await import("sharp");
+export const { default: Merge } = await import("@Function/Merge.js");
 
 export let _Action: Action;

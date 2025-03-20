@@ -7,22 +7,22 @@ environment for all contributors. As members, contributors, and leaders, we
 pledge to make participation in our community a harassment-free experience for
 everyone, regardless of:
 
--   Age
--   Body size
--   Visible or invisible disability
--   Ethnicity
--   Sex characteristics
--   Gender identity and expression
--   Level of experience
--   Education
--   Socio-economic status
--   Nationality
--   Personal appearance
--   Race
--   Caste
--   Color
--   Religion
--   Sexual identity and orientation
+- Age
+- Body size
+- Visible or invisible disability
+- Ethnicity
+- Sex characteristics
+- Gender identity and expression
+- Level of experience
+- Education
+- Socio-economic status
+- Nationality
+- Personal appearance
+- Race
+- Caste
+- Color
+- Religion
+- Sexual identity and orientation
 
 We promise to act and interact in ways that contribute to an open, welcoming,
 diverse, inclusive, and healthy community.
@@ -32,25 +32,24 @@ diverse, inclusive, and healthy community.
 Examples of behavior that contributes to a positive environment for our
 community include:
 
--   Demonstrating empathy and kindness toward other people
--   Being respectful of differing opinions, viewpoints, and experiences
--   Giving and gracefully accepting constructive feedback
--   Accepting responsibility and apologizing to those affected by our mistakes,
-    and learning from the experience
--   Focusing on what is best not just for us as individuals but for the overall
-    community
+- Demonstrating empathy and kindness toward other people
+- Being respectful of differing opinions, viewpoints, and experiences
+- Giving and gracefully accepting constructive feedback
+- Accepting responsibility and apologizing to those affected by our mistakes,
+  and learning from the experience
+- Focusing on what is best not just for us as individuals but for the overall
+  community
 
 Examples of unacceptable behavior include:
 
--   The use of sexualized language or imagery, and sexual attention or advances
-    of any kind
--   Trolling, insulting, or derogatory comments, and personal or political
-    attacks
--   Public or private harassment
--   Publishing others' private information, such as a physical or email address,
-    without their explicit permission
--   Other conduct which could reasonably be considered inappropriate in a
-    professional setting
+- The use of sexualized language or imagery, and sexual attention or advances of
+  any kind
+- Trolling, insulting, or derogatory comments, and personal or political attacks
+- Public or private harassment
+- Publishing others' private information, such as a physical or email address,
+  without their explicit permission
+- Other conduct which could reasonably be considered inappropriate in a
+  professional setting
 
 ## Enforcement Responsibilities
 
@@ -74,7 +73,7 @@ representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-nikola@nikolahristov.tech. All complaints will be reviewed and investigated
+Community@PlayForm.LTD. All complaints will be reviewed and investigated
 promptly and fairly. All community leaders are obligated to respect the privacy
 and security of the reporter of any incident.
 
@@ -126,21 +125,21 @@ community.
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
+This Code of Conduct is adapted from the [`Contributor Covenant`][homepage],
 version 2.1, available at
-[https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][v2.1].
+[`HTTPS://www.contributor-covenant.org/version/2/1/code_of_conduct.html`][v2.1].
 Community Impact Guidelines were inspired by [Mozilla's code of conduct
 enforcement ladder][Mozilla CoC].
 
 For answers to common questions about this code of conduct, see the FAQ at
-[https://www.contributor-covenant.org/faq][FAQ]. Translations are available at
-[https://www.contributor-covenant.org/translations][translations].
+[`HTTPS://www.contributor-covenant.org/faq`][FAQ]. Translations are available at
+[`HTTPS://www.contributor-covenant.org/translations`][translations].
 
-[homepage]: https://www.contributor-covenant.org
-[v2.1]: https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
-[Mozilla CoC]: https://github.com/mozilla/diversity
-[FAQ]: https://www.contributor-covenant.org/faq
-[translations]: https://www.contributor-covenant.org/translations
+[homepage]: HTTPS://www.contributor-covenant.org
+[v2.1]: HTTPS://www.contributor-covenant.org/version/2/1/code_of_conduct.html
+[Mozilla CoC]: HTTPS://github.com/mozilla/diversity
+[FAQ]: HTTPS://www.contributor-covenant.org/faq
+[translations]: HTTPS://www.contributor-covenant.org/translations
 
 Thank you for being part of our community and helping us create a safe and
 respectful environment for everyone!

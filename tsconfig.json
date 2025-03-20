@@ -1,8 +1,9 @@
 {
 	"compilerOptions": {
 		"baseUrl": "./",
-		"outDir": "Target"
+		"outDir": "Target",
+		"rootDir": "Source"
 	},
-	"extends": "typescript-esbuild/Target/Notation/TypeScript",
+	"extends": "@playform/build/tsconfig",
 	"include": ["Source"]
 }

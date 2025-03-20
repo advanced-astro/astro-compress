@@ -20,7 +20,6 @@ jobs:
 
         env:
             ADBLOCK: true
-            TELEMETRY_DISABLED: 1
             ASTRO_TELEMETRY_DISABLED: 1
             AUTOMATEDLAB_TELEMETRY_OPTOUT: 1
             AZURE_CORE_COLLECT_TELEMETRY: 0
@@ -33,6 +32,7 @@ jobs:
             GATSBY_TELEMETRY_DISABLED: 1
             GATSBY_TELEMETRY_OPT_OUT: 1
             GATSBY_TELEMETRY_OPTOUT: 1
+            GRIT_TELEMETRY_DISABLED: 1
             HASURA_GRAPHQL_ENABLE_TELEMETRY: false
             HINT_TELEMETRY: off
             HOMEBREW_NO_ANALYTICS: 1
@@ -47,9 +47,12 @@ jobs:
             SAM_CLI_TELEMETRY: 0
             STNOUPGRADE: 1
             STRIPE_CLI_TELEMETRY_OPTOUT: 1
+            TELEMETRY_DISABLED: 1
+            TERRAFORM_TELEMETRY: 0
+            VCPKG_DISABLE_METRICS: 1
 
         steps:
-            - uses: pozil/auto-assign-issue@v1.13.0
+            - uses: pozil/auto-assign-issue@v2.2.0
               with:
                   repo-token: ${{ secrets.GITHUB_TOKEN }}
                   assignees: NikolaRHristov

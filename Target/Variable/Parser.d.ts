@@ -1,12 +1,7 @@
+import type Interface from "../Interface/Parser.js";
 /**
  * @module Parser
  *
  */
-declare const _default: {
-    CSS: ("csso" | "lightningcss")[];
-    HTML: "html-minifier-terser";
-    Image: "sharp";
-    JavaScript: "terser";
-    SVG: "svgo";
-};
+declare const _default: Interface;
 export default _default;

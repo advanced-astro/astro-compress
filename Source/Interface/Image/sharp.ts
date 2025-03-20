@@ -1,18 +1,30 @@
+import type {
+	AvifOptions,
+	GifOptions,
+	HeifOptions,
+	JpegOptions,
+	PngOptions,
+	SharpOptions,
+	TiffOptions,
+	WebpOptions,
+} from "sharp";
+
 /**
  * @module Image
  *
  */
-export default interface Type {
+export default interface Interface {
 	[key: string]:
-		| undefined
-		| boolean
 		| AvifOptions
 		| GifOptions
 		| HeifOptions
 		| JpegOptions
 		| PngOptions
+		| SharpOptions
 		| TiffOptions
-		| WebpOptions;
+		| WebpOptions
+		| boolean
+		| undefined;
 
 	avif?: boolean | AvifOptions;
 
@@ -27,14 +39,6 @@ export default interface Type {
 	tiff?: boolean | TiffOptions;
 
 	webp?: boolean | WebpOptions;
-}
 
-import type {
-	AvifOptions,
-	GifOptions,
-	HeifOptions,
-	JpegOptions,
-	PngOptions,
-	TiffOptions,
-	WebpOptions,
-} from "sharp";
+	sharp?: boolean | SharpOptions;
+}

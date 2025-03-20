@@ -12,9 +12,9 @@ permissions:
 on:
     workflow_dispatch:
     push:
-        branches: [main]
+        branches: [Current]
     pull_request:
-        branches: [main]
+        branches: [Current]
     workflow_call:
 
 jobs:
@@ -23,7 +23,6 @@ jobs:
 
         env:
             ADBLOCK: true
-            TELEMETRY_DISABLED: 1
             ASTRO_TELEMETRY_DISABLED: 1
             AUTOMATEDLAB_TELEMETRY_OPTOUT: 1
             AZURE_CORE_COLLECT_TELEMETRY: 0
@@ -36,6 +35,7 @@ jobs:
             GATSBY_TELEMETRY_DISABLED: 1
             GATSBY_TELEMETRY_OPT_OUT: 1
             GATSBY_TELEMETRY_OPTOUT: 1
+            GRIT_TELEMETRY_DISABLED: 1
             HASURA_GRAPHQL_ENABLE_TELEMETRY: false
             HINT_TELEMETRY: off
             HOMEBREW_NO_ANALYTICS: 1
@@ -50,17 +50,20 @@ jobs:
             SAM_CLI_TELEMETRY: 0
             STNOUPGRADE: 1
             STRIPE_CLI_TELEMETRY_OPTOUT: 1
+            TELEMETRY_DISABLED: 1
+            TERRAFORM_TELEMETRY: 0
+            VCPKG_DISABLE_METRICS: 1
 
         strategy:
             matrix:
                 node-version: [18, 19, 20]
 
         steps:
-            - uses: actions/checkout@v4.1.1
+            - uses: actions/checkout@v4.2.2
 
-            - uses: pnpm/action-setup@v2.4.0
+            - uses: pnpm/action-setup@v4.1.0
               with:
-                  version: 8.6.12
+                  version: 9.3.0
                   run_install: |
                       - recursive: true
                         args: [
@@ -73,7 +76,7 @@ jobs:
                           --unsafe-perm=true
                         ]
 
-            - uses: actions/setup-node@v4.0.1
+            - uses: actions/setup-node@v4.3.0
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
@@ -85,7 +88,7 @@ jobs:
             - run: pnpm run prepublishOnly
               working-directory: .
 
-            - uses: actions/upload-artifact@v4.3.0
+            - uses: actions/upload-artifact@v4.6.1
               with:
                   name: .-Node-${{ matrix.node-version }}-Target
                   path: ./Target

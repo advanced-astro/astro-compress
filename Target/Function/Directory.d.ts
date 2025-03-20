@@ -1,8 +1,7 @@
+import type Interface from "../Interface/Directory.js";
 /**
  * @module Directory
- * TODO: Test this for performance, mainly importing the Integration.js System variable
  *
  */
-declare const _default: Type;
+declare const _default: Interface;
 export default _default;
-import type Type from "../Interface/Directory.js";

@@ -1,8 +1,19 @@
+import type Option from "@playform/pipe/Target/Interface/Option.js";
+
+import type csso from "../Interface/CSS/csso.js";
+import type lightningcss from "../Interface/CSS/lightningcss.js";
+import type sharp from "../Interface/Image/sharp.js";
+import type _Map from "../Interface/Map.js";
+import type Parser from "../Interface/Parser.js";
+import type html_minifier_terser from "../Type/HTML/html-minifier-terser.js";
+import type terser from "../Type/JavaScript/terser.js";
+import type svgo from "../Type/SVG/svgo.js";
+
 /**
  * @module Option
  *
  */
-export default interface Type extends Option {
+export default interface Interface extends Option {
 	/**
 	 * csso, lightningcss option properties
 	 *
@@ -66,15 +77,3 @@ export default interface Type extends Option {
 	 */
 	Parser?: Parser;
 }
-
-import type html_minifier_terser from "../Type/HTML/html-minifier-terser.js";
-import type terser from "../Type/JavaScript/terser.js";
-import type svgo from "../Type/SVG/svgo.js";
-import type csso from "./CSS/csso.js";
-import type lightningcss from "./CSS/lightningcss.js";
-import type sharp from "./Image/sharp.js";
-
-import type _Map from "./Map.js";
-import type Parser from "./Parser.js";
-
-import type Option from "files-pipe/Target/Interface/Option.js";

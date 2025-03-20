@@ -1,3 +1,5 @@
+import type Interface from "../../Interface/Map.js";
+
 /**
  * @module Image
  *
@@ -14,6 +16,4 @@ export default {
 	jpe: "jpeg",
 	apng: "png",
 	jpg: "jpeg",
-} satisfies Type;
-
-import type Type from "../../Interface/Map.js";
+} satisfies Interface as Interface;

@@ -1,23 +1,18 @@
+import type Interface from "../Interface/Directory.js";
+
 /**
  * @module Directory
- * TODO: Test this for performance, mainly importing the Integration.js System variable
  *
  */
-export default (async (...[Path]: Parameters<Type>) => {
-	let Clean = (await import("path")).parse(Path).dir;
+export default (async (...[Path]) => {
+	let Directory = (await import("node:path"))
+		.normalize((await import("node:path")).parse(Path).dir)
+		.replace(/\\/g, "/")
+		.replace((await import("@Function/Integration.js")).System, "");
 
-	Clean = (await import("path")).normalize(Clean);
-	Clean = Clean.replace(/\\/g, "/");
-	Clean = Clean.replace(
-		(await import("../Function/Integration.js")).System,
-		"",
-	);
-
-	if (!Clean.endsWith("/")) {
-		Clean += "/";
+	if (!Directory.endsWith("/")) {
+		Directory += "/";
 	}
 
-	return Clean;
-}) satisfies Type as Type;
-
-import type Type from "../Interface/Directory.js";
+	return Directory;
+}) satisfies Interface as Interface;

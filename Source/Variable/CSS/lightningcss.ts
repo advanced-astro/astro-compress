@@ -1,9 +1,14 @@
+import type { Targets } from "lightningcss";
+
+import type Interface from "../../Interface/CSS/lightningcss.js";
+
 /**
  * @module CSS
  *
  */
 export default {
 	minify: true,
-} satisfies Type;
-
-import type Type from "../../Interface/CSS/lightningcss.js";
+	sourceMap: false,
+	unusedSymbols: [],
+	targets: process.env["TARGETS"] as Targets,
+} satisfies Interface as Interface;

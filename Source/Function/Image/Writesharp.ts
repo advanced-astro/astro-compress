@@ -1,8 +1,11 @@
+import type Interface from "../../Interface/Image/Writesharp.js";
+import type File from "../../Type/Image/Filesharp.js";
+
 /**
  * @module Image
  *
  */
-export default (async (...[Option, { Buffer, Input }]: Parameters<Type>) => {
+export default (async (...[Option, { Buffer, Input }]) => {
 	const File = Input.split(".").pop();
 
 	if (!File) {
@@ -13,8 +16,8 @@ export default (async (...[Option, { Buffer, Input }]: Parameters<Type>) => {
 		typeof _Map[File as File] !== "undefined"
 			? _Map[File as File]
 			: typeof Option[File] !== "undefined"
-			  ? File
-			  : false;
+				? File
+				: false;
 
 	if (
 		Type &&
@@ -29,17 +32,10 @@ export default (async (...[Option, { Buffer, Input }]: Parameters<Type>) => {
 			(await Buffer[Type](
 				Option[Type] !== true
 					? Option[Type]
-					: (
-							await import("../../Variable/Image/sharp.js")
-					  ).default,
+					: (await import("@Variable/Image/sharp.js")).default,
 			).toBuffer())
 		);
 	}
-}) satisfies Type as Type;
+}) satisfies Interface as Interface;
 
-import type Type from "../../Interface/Image/Writesharp.js";
-import type File from "../../Type/Image/Filesharp.js";
-
-export const { default: _Map } = await import(
-	"../../Variable/Image/Mapsharp.js"
-);
+export const { default: _Map } = await import("@Variable/Image/Mapsharp.js");

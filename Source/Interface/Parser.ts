@@ -1,8 +1,14 @@
+import type CSS from "../Type/Parser/CSS.js";
+import type HTML from "../Type/Parser/HTML.js";
+import type Image from "../Type/Parser/Image.js";
+import type JavaScript from "../Type/Parser/JavaScript.js";
+import type SVG from "../Type/Parser/SVG.js";
+
 /**
  * @module Parser
  *
  */
-export default interface Type {
+export default interface Interface {
 	// biome-ignore lint/suspicious/noExplicitAny:
 	[key: string]: any;
 
@@ -16,9 +22,3 @@ export default interface Type {
 
 	SVG?: SVG | SVG[];
 }
-
-import type CSS from "../Type/Parser/CSS.js";
-import type HTML from "../Type/Parser/HTML.js";
-import type Image from "../Type/Parser/Image.js";
-import type JavaScript from "../Type/Parser/JavaScript.js";
-import type SVG from "../Type/Parser/SVG.js";

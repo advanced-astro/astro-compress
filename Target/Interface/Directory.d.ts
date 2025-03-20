@@ -1,9 +1,8 @@
-/// <reference types="node" />
+import type { ParsedPath } from "path";
 /**
  * @module Directory
  *
  */
-export default interface Type {
+export default interface Interface {
     (Path: string): Promise<ParsedPath["dir"]>;
 }
-import type { ParsedPath } from "path";

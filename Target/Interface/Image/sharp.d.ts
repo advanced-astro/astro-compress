@@ -1,9 +1,10 @@
+import type { AvifOptions, GifOptions, HeifOptions, JpegOptions, PngOptions, SharpOptions, TiffOptions, WebpOptions } from "sharp";
 /**
  * @module Image
  *
  */
-export default interface Type {
-    [key: string]: undefined | boolean | AvifOptions | GifOptions | HeifOptions | JpegOptions | PngOptions | TiffOptions | WebpOptions;
+export default interface Interface {
+    [key: string]: AvifOptions | GifOptions | HeifOptions | JpegOptions | PngOptions | SharpOptions | TiffOptions | WebpOptions | boolean | undefined;
     avif?: boolean | AvifOptions;
     gif?: boolean | GifOptions;
     heif?: boolean | HeifOptions;
@@ -11,5 +12,5 @@ export default interface Type {
     png?: boolean | PngOptions;
     tiff?: boolean | TiffOptions;
     webp?: boolean | WebpOptions;
+    sharp?: boolean | SharpOptions;
 }
-import type { AvifOptions, GifOptions, HeifOptions, JpegOptions, PngOptions, TiffOptions, WebpOptions } from "sharp";

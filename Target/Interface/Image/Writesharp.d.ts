@@ -1,9 +1,9 @@
+import type On from "../../Interface/Image/Onsharp.js";
+import type Option from "../../Interface/Image/sharp.js";
 /**
  * @module Image
  *
  */
-export default interface Type {
+export default interface Interface {
     (Option: Option, On: On): Promise<any>;
 }
-import type On from "./Onsharp.js";
-import type Option from "./sharp.js";
